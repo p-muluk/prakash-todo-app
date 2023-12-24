@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dbconfig
+  namespace: {{ .Values.namespace }}
+data:
+  MYSQL_HOST: svctododb.prod.svc.cluster.local 
+  MYSQL_USER: root 
+  MYSQL_PASSWORD: P@ssword
+  MYSQL_DATABASE: tododb

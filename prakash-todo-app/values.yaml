@@ -1,0 +1,12 @@
+namespace: todoapp-prod
+replicas:
+  mysql: 1
+  todoapp: 3
+images:
+  repository:
+    mysql: mysql
+    todoapp: pramul/my-todoapp:latest
+
+
+ 
+    
